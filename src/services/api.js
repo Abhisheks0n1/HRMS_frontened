@@ -16,7 +16,7 @@ export const employeeAPI = {
 };
 
 export const attendanceAPI = {
-  mark: (data) => api.post('/api/attendance/', data),
+  mark: (data) => api.post('/api/attendance', data),
   getAll: (params) => api.get('/api/attendance', { params }),
   getSummary: (employeeId) => api.get(`/api/attendance/summary/${employeeId}`),
 };
